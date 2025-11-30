@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodieDash | Responsive Food Delivery Menu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="top-strip">
+      Free delivery on orders above ₹299 · Use code <strong>FOODIE15</strong>
+    </div>
+
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-logo">
+            <div class="brand-inner">FD</div>
+          </div>
+          <div class="brand-text">
+            <span>FoodieDash</span>
+            <span>Fast • Fresh • Nearby</span>
+          </div>
+        </div>
+
+        <nav aria-label="Primary navigation">
+          <a href="#menu">Menu</a>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#offers">Offers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+          <div class="delivery">
+            <span class="delivery-label">Deliver to</span>
+            <span class="delivery-location">Hostel A, College Campus</span>
+          </div>
+          <div class="nav-actions">
+            <button class="nav-btn" type="button">Log in</button>
+            <button class="nav-btn primary" type="button">Cart · 3</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container layout-grid">
+        <section class="hero" id="menu" aria-labelledby="menu-heading">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <div class="eyebrow-badge"></div>
+              <span>Food delivery · Menu</span>
+            </div>
+
+            <h1 id="menu-heading">
+              Order from <span>top restaurants</span> around you.
+            </h1>
+
+            <p class="hero-sub">
+              Explore curated menus from trusted local kitchens. Filter by cuisine, category, or offers—
+              all on a responsive, semantic menu page layout.
+            </p>
+
+            <form class="search-form" aria-label="Search menu">
+              <div class="search-group">
+                <label for="search-term">Search for dishes or restaurants</label>
+                <input
+                  type="search"
+                  id="search-term"
+                  name="search"
+                  class="search-input"
+                  placeholder="e.g. shawarma, pizza, biryani" />
+              </div>
+
+              <div class="search-group">
+                <label for="search-category">Category</label>
+                <select id="search-category" name="category" class="search-select">
+                  <option value="all">All categories</option>
+                  <option value="burgers">Burgers</option>
+                  <option value="pizza">Pizza</option>
+                  <option value="indian">Indian</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="desserts">Desserts</option>
+                </select>
+              </div>
+
+              <button class="search-submit" type="submit">Find food</button>
+            </form>
+
+            <div class="hero-meta">
+              <span><strong>25+ restaurants</strong> delivering to your area</span>
+              <span><strong>Under 35 mins</strong> average delivery time</span>
+            </div>
+          </div>
+
+          <aside class="featured-card" aria-label="Featured combo">
+            <div class="featured-text">
+              <h2>Featured · Shawarma Nights Combo</h2>
+              <p>2 spicy chicken shawarmas + peri-peri fries + cold drink · Perfect for late-night cravings.</p>
+              <div class="featured-meta">
+                <span class="pill">⭐ 4.7 · 800+ ratings</span>
+                <span>₹299 <del style="opacity:0.6;">₹420</del></span>
+                <span>FREE delivery · 30 mins</span>
+              </div>
+            </div>
+            <figure class="featured-image">
+              <img src="Img.jpeg">
+            </figure>
+          </aside>
+
+          <div class="filters" aria-label="Filter menu by category">
+            <p class="filters-left">Browse by category:</p>
+            <ul class="filter-list">
+              <li><button class="filter-pill active" type="button">All</button></li>
+              <li><button class="filter-pill" type="button">Burgers</button></li>
+              <li><button class="filter-pill" type="button">Pizzas</button></li>
+              <li><button class="filter-pill" type="button">Indian</button></li>
+              <li><button class="filter-pill" type="button">Chinese</button></li>
+              <li><button class="filter-pill" type="button">Desserts</button></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="restaurants" aria-labelledby="restaurants-heading">
+          <div class="section-heading">
+            <h2 id="restaurants-heading">Restaurants near you</h2>
+            <p>
+              Realistic restaurant cards with rating, cuisine, delivery time, and mini items list.
+              This section can easily be repeated and populated from a database.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-thumb-wrap">
+                <img
+                  class="card-thumb-img"
+                  src="imgT.jpg"
+                  alt="North Indian thali from Bombay Grill House" />
+                <span class="card-tag">Top Rated</span>
+                <span class="card-offer">40% OFF</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Bombay Grill House</h3>
+                  <span class="rating">4.6 ★</span>
+                </div>
+                <div class="card-meta">
+                  <span>North Indian · Tandoor</span>
+                  <span>₹250 for one</span>
+                </div>
+                <div class="mini-menu">
+                  <ul>
+                    <li>Paneer Tikka</li>
+                    <li>Butter Naan</li>
+                    <li>Dal Makhani</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Opens till 11:30 PM</span>
+                <div class="delivery-time">
+                  25–30 mins
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb-wrap">
+                <img
+                  class="card-thumb-img"
+                  src="saladbowl.jpg"
+                  alt="Healthy salad bowl from Green Bowl Salad Co." />
+                <span class="card-tag">Pure Veg</span>
+                <span class="card-offer">Free Delivery</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Green Bowl Salad Co.</h3>
+                  <span class="rating">4.4 ★</span>
+                </div>
+                <div class="card-meta">
+                  <span>Healthy · Salads · Bowls</span>
+                  <span>₹280 for one</span>
+                </div>
+                <div class="mini-menu">
+                  <ul>
+                    <li>Protein Bowl</li>
+                    <li>Caesar Salad</li>
+                    <li>Detox Juice</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Calorie info available</span>
+                <div class="delivery-time">
+                  20–25 mins
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb-wrap">
+                <img
+                  class="card-thumb-img"
+                  src="food1.jpg"
+                  alt="Pizza slices from Slice & Spice Pizzeria" />
+                <span class="card-tag">New</span>
+                <span class="card-offer">30% OFF</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Slice & Spice Pizzeria</h3>
+                  <span class="rating">4.3 ★</span>
+                </div>
+                <div class="card-meta">
+                  <span>Italian · Pizza · Pasta</span>
+                  <span>₹320 for one</span>
+                </div>
+                <div class="mini-menu">
+                  <ul>
+                    <li>Margherita</li>
+                    <li>BBQ Chicken</li>
+                    <li>Garlic Bread</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Buy 1 Get 1 Tuesdays</span>
+                <div class="delivery-time">
+                  30–35 mins
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb-wrap">
+                <img
+                  class="card-thumb-img"
+                  src="food.jpeg"
+                  alt="Street style rolls and momos" />
+                <span class="card-tag">Best Seller</span>
+                <span class="card-offer">1+1 on rolls</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Street Side Rolls</h3>
+                  <span class="rating">4.5 ★</span>
+                </div>
+                <div class="card-meta">
+                  <span>Fast Food · Rolls</span>
+                  <span>₹200 for one</span>
+                </div>
+                <div class="mini-menu">
+                  <ul>
+                    <li>Paneer Roll</li>
+                    <li>Egg Roll</li>
+                    <li>Cheese Momos</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Perfect for late-night cravings</span>
+                <div class="delivery-time">
+                  18–22 mins
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="offers-layout" id="offers" aria-label="Offers and promotions">
+          <div>
+            <h2 class="offers-heading">Today’s offers</h2>
+            <p class="offers-text">
+              Use these limited-time coupons while ordering from your favourite restaurants.
+              These are applied at checkout for eligible carts.
+            </p>
+            <div class="offers-list">
+              <ul>
+                <li>FOODIE15 – 15% off on orders above ₹299</li>
+                <li>NIGHTOWL – Extra 10% off after 10 PM</li>
+                <li>NEWBIE – Flat ₹100 off for first-time users</li>
+                <li>FRIENDS – Free dessert on orders for 3 or more people</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="promos">
+            <h3>Why students love FoodieDash</h3>
+            <div class="promo-chip">🎓 Campus-special pricing</div>
+            <p>
+              Late-night library sessions or group projects, we’ve got you covered with fast
+              delivery and campus-only offers.
+            </p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-grid">
+        <section class="newsletter" aria-label="Newsletter sign-up">
+          <div class="newsletter-text">
+            <h3>Stay updated with new offers</h3>
+            <p>Get a weekly digest of discounts and new restaurant launches in your area.</p>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="you@example.com"
+              required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+
+        <div class="footer-bottom">
+          <div>© 2025 FoodieDash</div>
+          <div class="footer-links">
+            <a href="#menu">Menu</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
